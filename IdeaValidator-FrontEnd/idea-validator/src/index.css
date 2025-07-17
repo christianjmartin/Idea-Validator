@@ -1,0 +1,44 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: dark light;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #111;
+    background-color: #fff;
+    --side-bar-background: #f5f5f5;
+    --user-chat-bubble: #EEDFDA;
+    --agent-chat-bubble: #F1F1F1;
+    --link-color: #1a0dab;
+    --text-color: #000;
+    --border-color: #ddd;
+    --side-bar-hover: #ccc;
+    --new-convo-text: #fff;
+    --new-convo-background: #000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    --side-bar-background: #171717;
+    --user-chat-bubble: #5A2A2A;
+    --agent-chat-bubble: #171717;
+    --link-color: #8ab4f8;
+    --text-color: #fff;
+    --border-color: #777;
+    --side-bar-hover: #333;
+    --new-convo-text: #000;
+    --new-convo-background: #aaa;
+  }
+}

@@ -1,0 +1,296 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  color: var(--link-color);
+}
+
+
+
+
+
+/* BOUND PAGE */
+
+
+/* everything in column - navbar and the main-content */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* group text and conversation in column */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* row for side bar and group of text and conversation */
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+
+
+
+/* SIDE BAR */
+
+.side-bar-container,
+.closed-side-bar-container {
+  background-color: var(--side-bar-background);
+  border-right: 1px solid var(--border-color);;
+  position: relative;
+  transition: width 0.2s ease; 
+}
+
+.side-bar-container {
+  width: 220px;
+  word-break: break-word;
+  height: auto;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.side-bar-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.centered {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.closed-side-bar-container {
+  width: 20px;
+}
+
+.side-bar-tab-button {
+  all: unset;
+  height: 4rem;
+  width: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 100;
+  padding-block: 0;
+}
+
+.side-bar-tab-button:hover {
+  color: var(--side-bar-hover);
+}
+
+
+.side-bar-item {
+  cursor: pointer;
+  border-top: 0.5px solid gray;
+  font-size: 0.77rem;
+  margin-block: 0px;
+  padding: 5px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.side-bar-item:hover {
+  background-color: var(--side-bar-hover);
+}
+
+.new-convo-button {
+  border: none;
+  font-size: 1rem;
+  font-weight: 750;
+  padding: 10px;
+  background-color: var(--new-convo-background);
+  color: var(--new-convo-text);
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* NAVBAR */
+
+.nav-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+/* CONVERSATION  */
+
+.conversation-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.conversation {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  min-height: 0;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: var(--user-chat-bubble);
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  max-width: 50%;
+  text-align: left;
+}
+
+.agent {
+  align-self: flex-start;
+  background-color: var(--agent-chat-bubble);
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  max-width: 70%;
+  text-align: left;
+  margin-block: 1rem;
+}
+
+.agent p,
+.agent h1,
+.agent h2,
+.agent h3,
+.agent li,
+.agent ul,
+.user p {
+  margin: 0.2rem 0;
+  padding: 0.3rem;
+  line-height: 1.4;
+}
+
+
+
+/* TEXT AREA */
+
+.idea-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.description-container {
+  width: 70%;
+}
+
+.text-area-container {
+  cursor: text;
+  width: 70%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  padding-block: 2px;
+  padding-bottom: 40px;
+  margin-bottom: 4vh;
+}
+
+.text-area {
+  color: var(--text-color);
+  height: 4rem;
+  margin: 2px auto;
+  font-size: 1rem;
+  padding: 5px;
+  width: 97%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  display: block;
+}
+
+.text-area::placeholder {
+  color: #aaa;
+  opacity: 1;
+  transition: none;
+}
+
+.submit-button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: none;
+  border: none;
+  padding: none;
+}
+
+.submit-button-image {
+  height: 35px;
+  width: 35px;
+  padding: none;
+  margin: none;
+}
+
+
+.idea-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+
+.page-container,
+.main-content,
+.content-container,
+.conversation-container,
+.conversation 
+.idea-form{
+  min-height: 0;
+}
