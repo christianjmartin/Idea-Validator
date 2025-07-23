@@ -35,7 +35,7 @@ Therefore, migrating to Claude may require adjustments for full compatibility.
 
 - **If you do not want to set up the separate key** needed for this, please **swap the comments** out shown on the image below in ```tools.py```. Please note if you do this, the agent may lag for a second while it looks for the tool that does not exist. This being said however, I took steps to gracefully handle this case via the system prompt.
 
-![App Demo image 1](assets/tools.png)
+![App Demo image 1](IdeaValidator-Readme/assets/tools.png)
 
 **Otherwise**
 - Go to the official [Tavily Documentation Quickstart page](https://docs.tavily.com/documentation/quickstart)
@@ -59,7 +59,7 @@ Features:
 
 See the screenshots below for example use-cases:
 ---
-![App Demo image 2](assets/fragrance2.png)
-![App Demo image 3](assets/fragrance1.png)
-![App Demo image 4](assets/poker2.png)
-![App Demo image 5](assets/poker1.png)
+![App Demo image 2](IdeaValidator-Readme/assets/fragrance2.png)
+![App Demo image 3](IdeaValidator-Readme/assets/fragrance1.png)
+![App Demo image 4](IdeaValidator-Readme/assets/poker2.png)
+![App Demo image 5](IdeaValidator-Readme/assets/poker1.png)
